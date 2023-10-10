@@ -1,0 +1,160 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("UNIVERSAL CNC HUB | by fbdbhrc", "Synapse")
+
+
+--Plr tabs
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Player PC")
+
+
+Section:NewButton("reset", "Reset ur character", function()
+    game.Players.LocalPlayer.Character.Head:Destroy()
+end)
+
+Section:NewSlider("WalkSpeed", "WalkSpeee made you flash", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("JumpHack", "JumpHack made you super human", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+local MainSection = Tab:NewSection("Player Mobile")
+
+
+MainSection:NewButton("Infinite Yeild", "IY script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+local Admin = Window:NewTab("Admin")
+local AdminSection = Admin:NewSection("Admin")
+
+
+AdminSection:NewButton("Infinite Yield", "IY script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+AdminSection:NewButton("Fates Admin", "Fates Admin script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+end)
+
+AdminSection:NewButton("CMD-X", "CMD-X script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source', true))()
+end)
+
+
+local Games = Window:NewTab("Games")
+local GamesSection = Games:NewSection("Prison Life")
+
+
+GamesSection:NewButton("PrisonWare", "PrisonWare Admin", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))()
+end)
+
+
+local GamesSection = Games:NewSection("Bee Swarm Simulator")
+
+
+GamesSection:NewButton("HistyHub", "HistyHub script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/Histy"))()
+end)
+
+
+local GamesSection = Games:NewSection("Ragdoll Engine")
+
+
+GamesSection:NewButton("Uslagger Hub", "UslageerHub script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/enrabiaaa/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))()
+end)
+
+
+GamesSection:NewButton("Next Hub", "Next Hub script", function()
+    local Next_Hub = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qwarle/Main_Scripts/main/QUI.lua' )))()
+end)
+
+
+local GamesSection = Games:NewSection("MurderMystery2")
+
+
+GamesSection:NewButton("Lunar Hub", "Lunar Hub script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+end)
+
+GamesSection:NewButton("Eclipse Hub", "Eclipse Hub script", function()
+    getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+local GamesSection = Games:NewSection("Pet Simulator X")
+
+
+GamesSection:NewButton("JMES HUB", "JMES HUB script", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
+end)
+
+
+local GamesSection = Games:NewSection("Blade Ball")
+
+
+GamesSection:NewButton("Auto Parry", "Auto Parry not op", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry",true))()
+end)
+
+
+local GamesSection = Games:NewSection("Blox Fruit")
+
+
+GamesSection:NewButton("Zen Hub", "Zen Hub script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZenHubTheBest/Main/main/Loader", true))()
+end)
+
+GamesSection:NewButton("Da Hub", "Da Hub script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/gikkax/new/main/77_UN14IBB.lua'))()
+end)
+
+
+local GamesSection = Games:NewSection("Adopt Me")
+
+
+GamesSection:NewButton("Ice Hub", "Ice Hub script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Pa1nx/RRCreations/main/AdoptMe'))()
+end)
+
+
+local GamesSection = Games:NewSection("Zombie Attack")
+
+
+GamesSection:NewButton("Lightux", "Lightux script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+end)
+
+
+local GamesSection = Games:NewSection("Da Hood")
+
+
+GamesSection:NewButton("SWAGMODE Hub", "SWAGMODE Hub script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/CZcw7FEj", true))()
+end)
+
+
+local Anim = Window:NewTab("Anim")
+local AnimSection = Anim:NewSection("Anim")
+
+
+AnimSection:NewButton("FE Emotes", "FE Emotes", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Brookhaven-RP-all-emotes-6849"))()
+end)
+
+AnimSection:NewButton("AnimChanger", "Change your animation", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Credits")
+
+
+CreditsSection:NewLabel("Credit by CNCTEMA")
